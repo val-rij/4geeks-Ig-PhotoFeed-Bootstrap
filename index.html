@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
+	<title>Instagram Photo Feed - Bootsrap</title>
+
+
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container">
+						<a class="navbar-brand typeFont" href="#"><img class="icon-size"
+								src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png">Instagram</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+							<button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal"
+								data-bs-target="#publishPost">Create a new post</button>
+							<div class="btn-group">
+								<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<span class="fa fa-cog" aria-hidden="true"></span>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><button class="dropdown-item" type="button">Action</button></li>
+									<li><button class="dropdown-item" type="button">Another action</button></li>
+									<li><button class="dropdown-item" type="button">Something else here</button></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- modal post publish -->
+						<!-- Modal -->
+						<div class="modal fade" id="publishPost" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<form>
+											<div class="form-group m-2">
+												<textarea class="form-control" id="exampleFormControlTextarea1"
+													rows="2"></textarea>
+												<button class="btn mt-2 border"><span
+														class="fa fa-camera"></span></button>
+												<button class="btn mt-2 border"><span
+														class="fa fa-map-marker-alt"></span></button>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+										<button type="button" class="btn btn-success">Publish</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!-- end 1st row-->
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+						type="button" role="tab" aria-controls="home" aria-selected="true"><span
+							class="fa fa-th"></span></button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+						type="button" role="tab" aria-controls="profile" aria-selected="false"><span
+							class="fa fa-square"></button>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				<div class="container-fluid">
+					<div class="row">
+
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://st3.depositphotos.com/15296102/19561/i/450/depositphotos_195612412-stock-photo-beautiful-young-woman-working-computer.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://thumbs.dreamstime.com/b/cute-dog-puppy-redhead-pembroke-welsh-corgi-dressed-star-shaped-sunglasses-standing-skateboard-street-summer-walk-156367417.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://thumbs.dreamstime.com/b/espagueti-bolo%C3%B1%C3%A9s-44237816.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://thumbs.dreamstime.com/z/kids-play-football-outdoor-field-children-score-goal-soccer-game-girl-boy-kicking-ball-running-child-team-jersey-120383202.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://images.pexels.com/photos/220769/pexels-photo-220769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Marburg_asv2022-02_img06_Reitgasse.jpg/750px-Marburg_asv2022-02_img06_Reitgasse.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1280px-Hopetoun_falls.jpg">
+						</div>
+						<div class="col-md-6 col-lg-4 p-1"><img class="w-100" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhUYGBgaHBocGhwcHBkcHBwaGhgcGhgeHBwcIS4lHB4rIRoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrJSs0NDQ0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAK4BIgMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAECBQAGBwj/xAA9EAABAwIDBQYFAwIFBAMAAAABAAIRAyEEEjEFQVFhcRMigZGh8AYyscHRQlLhFGIVcoKi8SMkQ5IHssL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJBEAAgICAgIDAAMBAAAAAAAAAAECERIhAzEEE0FRYRQikYH/2gAMAwEAAhEDEQA/AJFJEZhybASeS+ibK2RTpNBc0F5AzE3vvibDwU1NnUQ9tRrQ1wM2sDuuBbxHqvSfmK2kjyl4DpNsw8D8HhzGuqOc1xMubY93hydzQ9tfCwYC+ke6BdrjfmQeHJezpuJEkQfA+oVKlNrhDhmG8HQ9QuZeTyZW2db8TicaS/6fKTSUGmvq1OjTb8rGjoANLDcvOfFGzZ/6oEEWMaRNjbfddXH5alLFqjj5PBxi5J2eL7Nd2aeFHknH7GrBuY03R0+2q6XyJds5FwN9IxDTUdmnjSXdkqzIfGIimoNJPdmoNNGQvWZ5pqvZrRNJN7O2O+s7K0AQJJNgBMeKHyqKtguCUnUUYZpqppr1e1/hl1Foc1xeP1WiOept9FhdkiHNGauLDk8eUHUkI9moLE6aS7sleRl6xHIoLE92Sjsk8hetiWRRkT3YrjRRmHqECxRkT5w5iYMHQxa2v1CGaSFNCfG0J5FGVNmkqmmqyJwYplUZU0WKppp2LFi2VRlTBYo7NFhsXhdCY7NRkRY9i+VRlTJYq5UrAAWqMqOWKC1FjA5VyLlXIsLPtONd3JlZDKxmxQ34nMI3IZjdZeFGNLZ9NKVvR6PC1cwElGfZYWHqkb5CefjZEAXWbjs0UtDIqgnVdWcXNLeIIS1HWSiVMQ2YBRWx3oR2bsRrMrzJcLxaB+VqvKC+tAgJbO46Jtyk7ZKjGKpIHicEyoZc0B0i8agbjyXndqYDI8iBlN2xpC9PkIFx0VgzOMrgIWkOVxf4Z8nDGa/TxPZImHwhe4NbEkwJsvQ/4I3TMZ3aeCcwuxQx7Hh1xOaeYi3muiXkKtHNHxXeymydgimXF+V8wBIkAb7FapaGNhoAA0AsB0XOrxqkcTXJ0XG3KTtnbGMYKkTiMXqIkHUbiF47aWDa15a10iAek/pPML0L3E6INbBsLHW7+o4zw6Lfhlgzn54exHmDSRaWAe4EhthvNgtrZ+y85BdZsTzK0aOzHNdZ/cBsDfzXRLyEtI5oeK3trR5NuGBGsH3vVDQXsRsZkyQeYnVWfsZmdrg3ujUGSDAt4Kf5SLfiMR+HNl0n03F7A4lxEmdABofErTdsPDZY7MRxk5vOZRaleAABAG4WCo/GEiAIXK5zk7Tf+nVDjhGNNL/Bg7OpGmKZY3IBYRpzB4814ja+xnUnwBLCTlOpjgea9p/XiANSh1qgc0tIBDk+LklBi5uGHJGvk+dOpofZLdxOzXh5a1pde2UGI3fVM4LYDnAl8sEWG8npuC9B88UrbPM/jScqSPM9kqupL0eO2PkY0iS6+bhHEcPVZRoq48qkrRE+BwdMzjSVTTWiaSoaSvMz9Zn9ko7NP9kqmkjMXrEezVezT3ZKDSTyJ9YiWKpYtLsmxvn0QjTRkD4hHs1yc7NcnkT6z1tKlInMuL3NsWpvs6U90kDhKuzDU3EzIEcV5GR7+P0KsxNtEWnihvUv2e3cT5obsI0GJd6FP+rD+yGBXM2KLhmgHMXB3L/lGw2CY1suknmfwl8TSDSC3Qz/AMKE09Ip2lbHG12zLjKEXkG2kylWUXP0H480dgy2Q4pApNjQxHFS2tdKPfF0NtYbksSrNtr4H0Ul51dos1lWRBJhS2txzEBRiVkO1XghZtR8yr4jFuIgNski95BFhKuMSXIJTJmxuivw73nKYb/cBIPLkq0cK4icw6J+iIG+U3KuhKN9k0cEGthrrwpZOh9Vz3Earz/xP8RNwzG90OfUJDASABEZid51FhrKzb+WWl8I9G95AsJ6IzHiPBfPfhr/AORG135KlPIS7KHCQM2gBDrzMC0/MJAXsf6l+acjjygoW1ob09kYk3SdR8KcVUee9kcB0SjC5+g87LSK0ZSexlrt5TLaeYWPvglKVEk/u6J/DWtofBEtdDjvsNmIEBcHb3IjgyBJuqnK7WCOfpos7LMjHU3VnZWDNHCwHiVTZ+wg6TUzNgkQNTGt+C9DQaGtAbEXPj90tjK7h16rRcsqxiZvii3lLYniPhthHdcWnncIOH+Hg0kvhw3XI8SP5Rv8TIs5L4vaLnCAbeSqL5XqyZR4lujsTUosBbkb0j7rzldgJJAgLRxDi8i3IAe9UOvhHMjM0iRIXRx1Ht7ObluXS0jNLFQ01oNEblV5JMytc2YYqjPNNVLE45iqaarIhxE8i5NdmuTyFielGDnf5lWp4MT80KBGudEdVAE5xZea2z1lQUUALEn34qXUwQAG+M/VJU9qsM99pPMx5Sq4narGNzBzXEmzZ8yY3JYyHlGjVawRBA6kmUXIwDQHxXkHbfqEmzY4AEfdWG3iNWA/6iPsn6pC9sT1U/paYCVrYZ37gsYfEEf+Mz/m/hc7bpOtP/cfwmoSQOcWalLCPcYLgPVMMwTOJ59VhP8AiBwHdY1viT+EhiNuVjYOyzewH3Txkyc4o9WMKTMP9EtTa5xLWPY5zbOAcJB5jxXm6e2a4/WfJs+cLzW1qFapU7elULK18zgS3PwMt0cBbSDv3ypQmla2OM4N07R9Fw0vYHtm5IIMBzXNOVzXDc4EEJinRdy8z9gvmOztu4nDO71FxdUe59VznF7XZWkmMvyOcTqZ+y+g4XazXtzsq0i3f3oPoCs/ZSqWmbPjt3Ha/DVYHAETA8/qjUsQBr4LNwe2aNQkMxFN7hq1r2ucOo19E3VrtaO+Ym4G+BqUskwxkvgmrjGlfM//AJirHs8M5rSQ1z5cJgSGw0kaTE/6eS+h4vaNNoIL5IvFraTJMDePXgsL4pp0sRRFFzMwcZl2Zololt23E3/4lDpqgimnbPj/AMJM7fH4ZoDiBUY50R8rHZyTAiBC/R5JOjnHy/K+b/Aez2YGvXccga9jZyuzOp5S4kOn9LhcGf033L3mG2vSe8NzAOI0c0tOgN50N96Kob2MVC/SCJ6flCdS3k6KlfFsa498joHH6DSyDU2oIyspPqDXM0OA32mJ/wCVWyBqlUcBAb0I3oHaAEhwg+SxcXj8VmGSg5reBY9xHMuj8KMZtynSpF9d4DgPkDml7j/a2bDmdE3ilbaElJukmbrsS3SZ8kOpip0Xk8L8Y4Z7W94mo8w2kxj3PB4F0Bp/zSB5L0QI5Ko4y6InlHsaD7GXOJ5HkknknefEq4XZVokkZyk2LlqgsTGVVLVWRnRobKoQMwidLprE4bPZzh4C4WLJGhK5r3C8nzWTi3LKzaM4qOLR20cBkNjLTod/ikSxO1XudqSUItW0ZNLZhKKb0KFiqWJotUFirInEV7NcmMq5GQsTIZj3j9Z8b/VVfi3uBDnEjgs1uJ428ERtbp6rO0XTGbK0BLGtGqhtYHeiwoZsqPc0XO5ULlSRxRkDQwKoXGpKEFMwiwLyqufxUZ1Qm+qLAJmUOPJQ0hWyoyAlrrJSvgabzJYM37mktd/7NIKZLFwEIdNbBScXoz8Ts5z4/wC4rWsJLXQBwzNJCFjG4pjQadV1SDGVwbMHWZMH0PBaxbvXZVHq4/qjVc/J1ZhYbaNYOLgx7HsGZzCYDgZBuP0m+6Ad97aFbapyipQY55IsGscYN5a+Rltx8bIlaixz2ZwYE3BLS02uHA2sT4F26QcvauzsIyc7w51rMOWpxGYCWHX5oGu9Yyji6OmEso2VxG36joY0NYZGYMeXADe5z5gj+xuuhtIWZV23UNTuOfbeAXGxdmdlGpJfPUBIveyctNr3kwGy6bb5DWgnTiIW98J0QGPqWl7sttMrLADlJPXmURjk6Cc8VY7sjbGNcS+nFJot/wBTMS8wATEA6BvIQBe5M46ni6zw6piSQNGg1Q0HjlDxdacKHO5haPhg9sx/k8nSEX4So9uWpiaz2/tDsoPXUx4qlLY+HbbsWHm4Fx/3J4kfuC6VS44LpIh8vI+2zsJRpM+Smxn+VoCaGKFpSYfukKxp9PMKriibkzTpYzLo6D73Jhu0H7nT5fhYBaZ08ZCt3hxRaDZ6GntBwNzI4W+oRztEft9V5sPeRGg470IsMQZLfRDaGrPTf4kIs31/hVO0f7fVeZNTJo6PFEFZ/wC4DqW70sojxb6R6EbT/t9f4VHbSP7R5rAZi3cQffJDftE73NHl908kKmejZtL9zfL+VZ+0GwbHlpdeSrbSgSX+X8JZ21dxL/EoyQYs9p/iLf2n0XLxP+Jf3O/9lyWSDFjJbxzev0lEY4i7iY3ffchHEEXh3RFZVndCjIdA69zqr0yRvA8kUu6eSoao5Dw/KrIHEsKhJg6e9VBfB3HorGN59Fbs51j0QpEuJwfbmoDj7lcxoGpnoiNEjSEOSEos6VBI6LiOqkdFLmWolC8zYW8VzHmbRHXlw6rpM6FTlnUflCkJxLl55qHl0SdFVhj9J8Y/KKyoNw9QqUiHEjObCPFWNQ7grObvjXmq24iUZISReixzw5sSYtvuDInyKXw7sM5v/XoNeBveLtibGJiPTxu7gHtzlhe1riJbJgWc288ZI8/Im0MA97XOaWNqFpD2uc1mY6ZmuzCLc+dt+MnbO7iX9UeH23j21HOpYai2nTEl5a0SQ35i99yGiBqYNuS1fhqr/wBsy37t397kXatJlOj2LGNaxxBqvaCztYjJTY5xL3gmS5+gA3yhbHqAMs2xc4gaC5nu2+UTAO+E4uiOVWtmk6qc0gy2DbnzQsRSa4jKTEDW19+qv2gI9/hVtwMqsmZfhOHqBp7zQRfhPv8AKFiILpaCN4E8oKloHAqriEKW7Kt1RV9YtkgyJsDCCK5dqCT79EHEGctjMm0EJrD0coue8dU7pEW7HMJUYARUBmdReBwv4+apiTTLZYHAmLbjcz0GmnJBlUe+0i6i92aKTqiKp70tJI03zpGiWxD3z8xi0jMT700RHd7Sx6oZZl1JJ808gTLseJMz8sCBNzxi+iYOIYSYLgNb6kDgAVlVqriYynqhtGU/K5xPiUqHmP1qMtaQ+Q50Tljg6PAoRY5sy7SI6kdUqW1D/wCPKOJ9EdlAD53SdfHxRddiyv4KPpOIklsQdZ8NFdmDIEzeJtuBtdWfljdPJKDNNied/RJTQ9Df+HN3677/AMrkvmf+7/c5cnkg19DzS5SQf3HxQqdbMJyuHh9VLak2LTHWbpWxUw7GTrKI2mDqJ6rPq4Z890gdLFXY2s094B3HSU7/AEkdNK0Nc5vQz9VJY5oAzE8gL+ZKqzEho7zSL2sYjrvKuysLwY6/a8oyYmkHpkxpl5W+yl5I0EnqhOBtDj4KzjH6t+vXToocikgknUorX2MRP1UYNzSTmywAdZEa35/eytisQwWY09TEnnEwOinK9FqLSuxaox3vRVa8j5gfNG7Q8R6IBxBBuZ5CPfBUpENMvLtwnxXGd9vqh53/ADacrfUrnEgEk8D71TyIaLdrFp+iYpFrtD5yUp2kH5CdbxM9LdFb+qJtkeP9KHIFE9Z8LYWm41i9rXNDWi4DoknTeNBcLN23hcOSC3FspiLZwfR0X0vadJI0RPhoVHMrsa6HlrcucNhwGfM0iCd8yJIyzBgg+G+Ktm1aZl2Roe79EwHC0Fp0mSbcd2guKyReVI9DtHZNFjM5xbCTORuQsa87yWvce6OJk8klhjLGXM5Rc9FgVHvADHHNoYkEC1hPGNy3qFN4a0TaBbw4pyWKJcsmFLw0SL8YuhtxGbTN5QjsY73MqtSdwM++KyzQUyrqhA3oTavJyHkfOvkrvB0BPvwSzQ8WGaGzJdcaCbD8lQ9496JdjIvf31V3PB3D0J85Sc2Uoo6pVkEd7p7CHTeG6N9Tf1UuqSenviuY/wAFOQ0i7qpP6D4WA53VKrzoBCpVeNBf8IT8QRcAH092RkOgdVg3uceUn8rsO1ouLH3vQ6pz/oLRx/P4RcOMo1JPoqy12CRd1Qk3m43x4qpAjQegVZvOW/SDC5zzpu4f8KbHRV1lIZPTmI0XZhrl+qsaxAsPT8JX+DxOyj3P5XIfb+7rkW/odfg+Mhkd2J5dLqS5sfi6q2g3l5BX7FnJLNGTYIV2CZzf7vv9lZuLEgNa4jeSfpAU/wBKzgPNXbhm8Aj2REXbB/cjCoBv9PwEA0ufqqPYeI80s0wocFRmsEmOnPeq9r0+v5WbUdEQQeMOg+tlJDpsZ8U7/RtM0u3/ALvCP4UB07vSFn0A46gtvvlMueGC5M87+gSsEmGe83tb3uQ2VOQSn9cHEDNw00Rc9pEHrKdtDoZ7Q+wiMe47x5j6JRuKOkDwH8orMSBqD6KXJjxGHV3cvTcubiH65Z8FUY1gElh11vCh2OZuHp91Of4Kj0nwhiHdo8OEdyeha5sfVL/HuHZUdSYGNDnvYHFrRmIzNm9piepkXSvw9tMNrRlLszS0BsC9jqf8pWxtXEjt6AIyy9p1bfKRlmxNifXouni5Ixjvsb4pSVxWjL+LqjGMbSptDnuIa51yGgXLabSIb/c6MwFpJmMXMQPmngFs/E+JFN4aGXqAtL5kNY1wcWMbNi++ZxEkTxWPnYdJ9fQqebkTpIn1yg3YF9M6knwlQ1xj5j76BMMLSYv76LnlouSANPtqscixdpdw9UBuLGbLmvMQJRauGe891wy8ARJ8ZS1fBVBHdN5Ethx9JQsRDT3ncJ6bpQ34qLFwEbjZKvwr3Nyg1Gi1gDBI0Jt1QK2Ac4y7M4nUlpn3+E0kFj4rzvEeG/Tzsq1HxqBrv5JGlFOHGbcW2mZAgzO49UWltBhJGaJ46Rebp19D0Msj+30lT2nDRAGIZMZ226/UwuOIb+9oHXdxhSAbtDxPguOIPH1QH4hgMF482qWvbeIMa3BidN6KGFNd2uYyozmbyVQvvb6aLm34mEgLGpuj0URP6R9PoqCoBpc9Vcu6p3Qyezb+z1K5VzN5eS5GTCyzK0lw4R9JRmB2tgOf2SVHKZcHan0AgHxifFTjK5AbrvMHSw4xzJ8EqBRiNseVc1wOSVzlrb9528895Q2vzedyRp0RiLBDIxROhIHVcS1xkSeqo4sG4nnP20UCqDPppbyRQ1FfIxRog3s0DU/idSqYktPytiLb5JQnEmA0393sVDWZrNMxafwCihtKqSIbrr5SjNqFu88rmVzqGUCLk3XU8OXCZA6yJ6KWRjIIyq4/qI9+aVxDySRMjirViQImyVL7ooJUtF5cBAJ8VLHun5iVaeXv6Ihfy9+SMmTdA3E8b35a/dQZMZZAGtyZMHyEn08UUZf4VsjSflPgU86GpDfw88/1LDuk/wD1KY+Ma5ZiWPAN77zBzDQTbckcOwMqMe1xbB+WxmeJ80bbuILq1MHcMx6AtUZW0dvFvgf3Z6L4zLA2kYA533tJPNeRdjGiBmZJ/uG/kmvjbFueWNmP1dIEfdeVzFpBBJvI4HwvKuCUlbI8ulyV+HpTUIGYAxpIVm4lxaSHaeZ6Lz9PGGXdwS45py6XJMbmgz6LTwwflzkkA2g6CBeZ4puKRzaGv6kkE30k9NPLoupYk8DHl5JfH4p8Nc8yRwtv3RukFAOIBaXB0Xj+L71ON9A6fRp5m73u6FVcxp+V8DoZ8yYWbQqFxgAk9PDd1RnvAsRcjS+47+CdSCmHdgmkkktJ5gH+BvQ+y5DmMo8dykOPMDz9QqBx9ylchYsICAJkAdBw5KBVFpaNeAKHkF4t75qGyY1ICGwoaNVhtlnwhc08iP8AUlHM18tfwuDANTP5S0FDbndSOoQGvniI/CGXcAocDvStDou988vJCmLe/MKsc5UPkIsdF83uFyHnXItjCbPIc0Dul1tDrwPjYpKvVktBIHecHD/S4GB5Qq4Cu4MBblaMwudxzG5M8eW9KOcXOGU3Di0f6pPkQZmeGsLZJWFI1sNiCWd6571+QMfjqpZicsXInQAA7t8n15pTE1Gta9u6DlPQARbQWEHobqcWXBocSIkEjgIIi+4T/KVhux51W246DmpbUAHyhdhKMnNoCZ0g2gC3hPlwWg2mImVm50ITySBlNzcxuHgjMpZQSOP5hEdRabmQbXH8hXZhWA3cbn3uS9hSYAZiCSAb2uZj7dF0kmLjzTmRg37/AL/hSGtJgGD5xztco9gWzFxNW8SSAl4BM/legqljbGCfMJeqym6+QdRI+iPZ+ESi2K0ssWn0RWPO7Tp+NUUYcQSIiO6HZr3IgW0HFMsdlFpFhJGs7/Cb/lJyGofYEUSZDhEexYe7FWZTaJv6geypcQbNDvEzp0Ch9ME6Ra4mZIuT/CmylFIq3INDPU3meXK/mqYshz2OImWOHiHNXdmAJIshYjHsp9iXNeDIc4OaR3HAaTGaYBtI5qoxcujbjkqaDbUax9c5hIaxkdXX48B6pU7Ppfs8i78qzcUx+IfkkMeARmyZhkYxo7rXGBMz1tMFaTMGSYsSNRY9T5fVErhojleU2zN/pGbmx4u+5R2NhuUTAnhvMpjE0MhPIkekjzlLtp5mgh1jH0lRm38mdUDdhgdXk8jH2CC7ZrbQ4iLQAE+KR4N+qE/DvJs8N5AJ5yQqFWbNj9Z8v5VK+yg45g4zzk/UrRZSjUyuy8JVZy+wpGR/h1QGRU6a+4U03VWNIdTzXsZkmeQutdQUex/IHlnveCZdB3giCORCKzHvbIIBnwg8JXoX0wdQD1EpSts2m7UR0Memiv2L5QUzNo42ZzkA8BpzHNMUqwIkRE8p3bvFWfsZn6XEeRQjs94Pdc0weBEkX0iPVPKLDYz2iE6/Hz1Hio7zYDmO11gnLPHcFL6rQcp14HXhvUtfQyXDfw9FGYgyCJ98dVzHg2hc0gGIBt91OwOzn3C5W7P+1cgRg9tMMIjMbySGwLgi9ybdfJO4enoP0Nda0B0XcXRBme7e3JKbMZnc5zt2oFgYi/WQD18lr4UDs88atkDgDJA56XPNbTeKLFMcQ5pIPylpdYQ0EjdHAkeBVauLbGSC4kjMejQY01MGB0TJoRSe4WEN62PlvHqsx7SMrBAk2PAwB9SD4KYtMEa1PaR+UDvaGI9B536c1NPGDvMaS7SSdxGpPCI9QsWs8h+QWuLjdDteZm+5PNJYMsyS5t/EHxTcEFG+0u1JHhdc6odxWfTq6axlkDS0x4mxMmdV1bEQJjUgeZj7rnlGnSE0OCoBfUqTiIOYQ3pP1JlKi60MJs8loqOymnmc3J+5wAPetGXvDS9vNRjYIph8LUe6YApyAXmBzMDfbhvV6uEG8TcxMi14tMaRYg9VqYWgS255/wAeqFXw0CbEAHXXSB9Fdl1oXw9SSS/M+1oOt95I0ifyhvqEGdBaByPzA80bF0jTEzNgeHkVmirneZGs7/GY3G30UN30SaFJ4IJndfkYJ+xTOCoh7nAugZS8ngJAOvG91i0q4DXi8EAN0kQSb+ZCboFzJGaRkcxw4gXHqR5JpNdlJHqMHToM/QXkN7xcQTLgCGwNO6Z03hZFT4TplxLC1jDBLCwvc3kHOfp1BiFn1MW5pa+d4JA3xc+ZjyXqMPXytJMmwm95kC07rq4zaLjTMvD/AAtSDs76hLiCAWAUxE8MxcdNJK2G4ZjSALAC5MabzJ/V16pfF4twdltkJ04HLMxodPcrErYl/ezuzZXm8btWnKTAOoO6PRTbYpUtIJtlzcrtQXd1xnRxeC0+R8ilsMBAYNJ+jWyB4j6lYlbEVHF7HOnKBe/6SA0gcREdAE/sGvmcW7xx0JJHkNPJZ4tGPyanZRoQrZDxWphME0gB03eWyDoByNkptGiaZ1kSQN2joTadFOLSsVNPmENxYIl7e9pfVJ4ytUABkX81n0nOeYnxN4vEgcboSJRudz94UsY06FZVPEagbibnhbnz5LnvnQwd9hG/hHA+avEdI1uyG4oT6KxXYh4mHWvI3HWLeCmhjnuaYcYEzOvy2hGD+xGm9scUMvHEJaljnBrRqTvJOnuEE48P/Q2fLjwSxYD5eSI9+HBAq0Q752h3W8dDqEIzAgRNvmNj5aKXuLWzJP5TVlHOwoLQ0GPIzaNdVnYiq1gIBDjMTqBad0SjPxLnQ4GBMEcTYX4i67EMaQbEEgZiN9yP/wAnzVK/kDOzH97PNq5U8/MqVoB//9k=">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="card border-light cardSize mt-5 mb-5 mx-auto">
+								<div class="card-header bg-white p-0 d-flex  justify-content-between">
+									<h5 class="card-title pt-2 pb-1 ms-2">Office day!</h5>
+									<h5 class="card-title pt-2 pb-1 me-2 text-black-50">12/14</h5>
+								</div>
+								<img src="https://st3.depositphotos.com/15296102/19561/i/450/depositphotos_195612412-stock-photo-beautiful-young-woman-working-computer.jpg" />
+								<div class="card-body">
+									<h5 class="card-title">204 Likes</h5>
+									<p class="card-text">This is a good example of a photo that you can post on instagram.</p>
+									<form>
+										<div class="form-group m-2 d-flex align-items-baseline">
+											<button class="btn mt-2"><span class="fa fa-heart"></span></button>
+											<input class="form-control form-control-sm inputfield border-0 pb"
+												type="text" placeholder="Comment..."
+												aria-label=".form-control-sm example" />
+											<span class="fas fa-ellipsis-v"></span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="card border-light cardSize mt-5 mb-5 mx-auto">
+								<div class="card-header bg-white p-0 d-flex  justify-content-between">
+									<h5 class="card-title pt-2 pb-1 ms-2">Cute Puppy</h5>
+									<h5 class="card-title pt-2 pb-1 me-2 text-black-50">12/14</h5>
+								</div>
+								<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" class="card-img-top img-fluid" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">794 Likes</h5>
+									<p class="card-text">This is a good example of a photo that you can post on instagram.</p>
+									<form>
+										<div class="form-group m-2 d-flex align-items-baseline">
+											<button class="btn mt-2"><span class="fa fa-heart"></span></button>
+											<input class="form-control form-control-sm inputfield border-0 pb"
+												type="text" placeholder="Comment..."
+												aria-label=".form-control-sm example" />
+											<span class="fas fa-ellipsis-v"></span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="card border-light cardSize mt-5 mb-5 mx-auto">
+								<div class="card-header bg-white p-0 d-flex  justify-content-between">
+									<h5 class="card-title pt-2 pb-1 ms-2">Can't have enough!</h5>
+									<h5 class="card-title pt-2 pb-1 me-2 text-black-50">12/14</h5>
+								</div>
+								<img src="https://thumbs.dreamstime.com/b/cute-dog-puppy-redhead-pembroke-welsh-corgi-dressed-star-shaped-sunglasses-standing-skateboard-street-summer-walk-156367417.jpg"" class="card-img-top img-fluid" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">634 Likes</h5>
+									<p class="card-text">This is a good example of a photo that you can post on instagram.</p>
+									<form>
+										<div class="form-group m-2 d-flex align-items-baseline">
+											<button class="btn mt-2"><span class="fa fa-heart"></span></button>
+											<input class="form-control form-control-sm inputfield border-0 pb"
+												type="text" placeholder="Comment..."
+												aria-label=".form-control-sm example" />
+											<span class="fas fa-ellipsis-v"></span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="card border-light cardSize mt-5 mb-5 mx-auto">
+								<div class="card-header bg-white p-0 d-flex  justify-content-between">
+									<h5 class="card-title pt-2 pb-1 ms-2">Pasta day!</h5>
+									<h5 class="card-title pt-2 pb-1 me-2 text-black-50">12/14</h5>
+								</div>
+								<img src="https://thumbs.dreamstime.com/b/espagueti-bolo%C3%B1%C3%A9s-44237816.jpg" class="card-img-top img-fluid" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">235 Likes</h5>
+									<p class="card-text">This is a good example of a photo that you can post on instagram</p>
+									<form>
+										<div class="form-group m-2 d-flex align-items-baseline">
+											<button class="btn mt-2"><span class="fa fa-heart"></span></button>
+											<input class="form-control form-control-sm inputfield border-0 pb"
+												type="text" placeholder="Comment..."
+												aria-label=".form-control-sm example" />
+											<span class="fas fa-ellipsis-v"></span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="card border-light cardSize mt-5 mb-5 mx-auto">
+								<div class="card-header bg-white p-0 d-flex  justify-content-between">
+									<h5 class="card-title pt-2 pb-1 ms-2">Soccer time</h5>
+									<h5 class="card-title pt-2 pb-1 me-2 text-black-50">12/14</h5>
+								</div>
+								<img src="https://thumbs.dreamstime.com/z/kids-play-football-outdoor-field-children-score-goal-soccer-game-girl-boy-kicking-ball-running-child-team-jersey-120383202.jpg" class="card-img-top img-fluid" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">723 Likes</h5>
+									<p class="card-text">This is a good example of a photo that you can post on instagram.</p>
+									<form>
+										<div class="form-group m-2 d-flex align-items-baseline">
+											<button class="btn mt-2"><span class="fa fa-heart"></span></button>
+											<input class="form-control form-control-sm inputfield border-0 pb"
+												type="text" placeholder="Comment..."
+												aria-label=".form-control-sm example" />
+											<span class="fas fa-ellipsis-v"></span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+						
+
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--end 2nd row nav tabs-->
+
+		<!--end container-->
+	</div>
+
+	<!-- Scripts for boostrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+		integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+		integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
